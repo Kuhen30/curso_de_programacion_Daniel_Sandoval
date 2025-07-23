@@ -10,14 +10,14 @@ productos = {
     "pan": 0.75
 }
 
-# aca funcion donde agregamos elementos a la lista
+# funcion donde agregamos elementos a la lista
 
 
 def agregar_elemento():
     print("Productos disponibles:")
     for producto, precio in productos.items():
         print(f"{producto.capitalize()} - ${precio:.2f}")
-# aca pide el sistema el nombre del articulo a agregar a la lista
+# aquie  pide el sistema el nombre del articulo a agregar a la lista
 
     elemento = input(
         "Ingresa el nombre del elemento que deseas agregar: ").lower()
@@ -27,7 +27,7 @@ def agregar_elemento():
     else:
         print("Ese producto no está disponible. Intenta de nuevo.")
 
-# aca muestra si la cesta esta vacía o  el contenido de ella
+# Quie el sistema muestra si la cesta esta vacio o el contenido que  esta en ella
 
 
 def mostrar_cesta():
@@ -75,7 +75,7 @@ def run_programa():
         print("5. Renunciar")
 
         opcion = input("Ingresa el número de la opción que quiera realizar: ")
-# aca la funcion para que el sistema tome el numero que ingresa el usuario
+# funcion que toma el numero que el usuario tomo
         if opcion == "1":
             agregar_elemento()
         elif opcion == "2":
