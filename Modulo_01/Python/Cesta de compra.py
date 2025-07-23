@@ -17,7 +17,7 @@ def agregar_elemento():
     print("Productos disponibles:")
     for producto, precio in productos.items():
         print(f"{producto.capitalize()} - ${precio:.2f}")
-# aquie  pide el sistema el nombre del articulo a agregar a la lista
+# en este apartado el sistema  lee el  nombre del articulo a agregar a la lista
 
     elemento = input(
         "Ingresa el nombre del elemento que deseas agregar: ").lower()
