@@ -101,12 +101,70 @@ if ($edad>=18 && $edad <=65) {
 ?>
 
 ejercicio 6 Utilizando bucles anidados, crea un script que dibuje un cuadrado de 5×5 en la terminal utilizando el carácter #.
+
 <?php
-$fila = 5;
-$columna = 5;
-for  ($i + 0; $i < filas; $i++){
-    for ($j =0; $j< $columna; $j)
-    echo "# ";
+$size = 5;
+
+for ($i = 0; $i < $size; $i++) {
+    for ($j = 0; $j < $size; $j++) {
+        echo "# ";
+    }
+    echo PHP_EOL; 
 }
-echo "\n";
+?>
+
+ejercicio 7  Clasificación de un Número
+➖➕ Desarrolla un script que determine si un número almacenado en una variable es positivo, negativo o cero, y muestre el resultado correspondiente.
+
+<?php
+$numero = -99;
+
+if ($numero > 0) {
+    echo "El numero es positivo.";
+} elseif ($numero < 0) {
+    echo "El numero es negativo.";
+} else {
+    echo "El numero es cero.";
+}
+?>
+
+ejercicio 8 
+
+<?php
+for ($i = 1; $i <= 30; $i++) {
+    if ($i % 3 == 0 && $i % 5 == 0) {
+        echo "MarTierra\n";
+    } elseif ($i % 3 == 0) {
+        echo "Mar\n";
+    } elseif ($i % 5 == 0) {
+        echo "Tierra\n";
+    } else {
+        echo $i . "\n";
+    }
+}
+?>
+
+ejercicio 9
+
+<?php
+$temperatura = 12;
+
+if ($temperatura < 10) {
+    echo "❄ Frrio";
+} elseif ($temperatura >= 10 && $temperatura <= 25) {
+    echo "️ Templado";
+} else {
+    echo " Caluroso";
+}
+?>
+
+ejercicio 10
+
+<?php
+for ($i = 10; $i >= 1; $i--) {
+    echo $i . "\n";
+    sleep(1); // Pausa de 1 segundo entre cada número (opcional en terminal)
+}
+
+echo "🎆 ¡Feliz Año Nuevo!\n";
 ?>
