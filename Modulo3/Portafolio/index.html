@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FONT AWESOME ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Responsive Portafolio Daniel</title>
+  <link rel="icon" href="assets/img/icono.png" type="image/png">
+</head>
+
+<body>
+  <!--==================== STYLE SWITCHER ====================-->
+
+
+  <input type="radio" name="color" id="color-1">
+  <input type="radio" name="color" id="color-2">
+  <input type="radio" name="color" id="color-3">
+  <input type="radio" name="color" id="color-4">
+  <input type="radio" name="color" id="color-5">
+  <input type="radio" name="color" id="color-6">
+  <input type="radio" name="color" id="color-7">
+  <input type="radio" name="color" id="color-8">
+  <input type="radio" name="color" id="color-9">
+  <input type="radio" name="color" id="color-10">
+  <input type="checkbox" id="toggler" />
+  <input type="checkbox" id="day-night" />
+
+  <div class="style__switcher">
+    <label for="toggler" class="style__switcher-toggler">
+      <i class="fa-solid fa-gear fa-spin"></i>
+    </label>
+
+    <label for="day-night" class="style__switcher-theme">
+      <i class="fa-solid fa-sun"></i>
+      <i class="fa-solid fa-moon"></i>
+    </label>
+
+    <h3 class="style__switcher-title">Colores</h3>
+
+    <div class="style__switcher--colors">
+      <label for="color-1" class="color-1 color"></label>
+      <label for="color-2" class="color-2 color"></label>
+      <label for="color-3" class="color-3 color"></label>
+      <label for="color-4" class="color-4 color"></label>
+      <label for="color-5" class="color-5 color"></label>
+      <label for="color-6" class="color-6 color"></label>
+      <label for="color-7" class="color-7 color"></label>
+      <label for="color-8" class="color-8 color"></label>
+      <label for="color-9" class="color-9 color"></label>
+      <label for="color-10" class="color-10 color"></label>
+    </div>
+  </div>
+
+  <!--==================== HEADER ====================-->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Daniel</a>
+
+      <!-- checkbox para el toggle -->
+      <input type="checkbox" id="nav-toggler" class="nav__checkbox">
+
+      <label for="nav-toggler" class="nav__toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">Sobre Mí</a></li>
+        <li class="nav__item"><a href="#qualification" class="nav__link">Experiencia</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+        <li class="nav__item"><a href="#works" class="nav__link">Proyectos</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contáctame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <div class="home__content">
+          <span class="home__small">Hola</span>
+          <h1 class="home__title"><Span>Soy</Span> Daniel <br>
+            Un <span>estudiante de Computacion</span>
+          </h1>
+          <p class="home__description">Soy estudiante de Computación en la Universidad del Zulia, apasionado por unir la
+            teoría con la práctica para crear soluciones tecnológicas que destaquen por su funcionalidad y estética.
+          </p>
+          <div class="home__btns">
+            <a href="#contact" class="btn">Contratame</a>
+            <a href="#portfolio" class="btn btn--trasparent">Portafolio</a>
+          </div>
+        </div>
+        <div class="home__img-wrapper">
+          <img src="assets/img/perfil-1.jpg" alt="" class="home__img">
+        </div>
+      </div>
+    </section>
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <div class="abount__img-wrapper">
+          <img src="assets/img/perfil-1.jpg" alt="" class="about__img">
+          <img src="assets/img/perfil-1.jpg" alt="" class="about__img">
+          <img src="assets/img/perfil-1.jpg" alt="" class="about__img">
+
+        </div>
+
+        <div class="about__content">
+          <h2 class="section__title" data-title="¿Quién soy yo?">Soy Daniel Alejandro</h2>
+
+          <p class="about__description">
+            Soy una mente creativa con espíritu técnico. Para mí, programar no es solo escribir líneas de código,
+            sino construir universos funcionales desde cero. Cada función, animación e interacción tiene un propósito,
+            y me motiva esa sensación de dar forma a lo que antes no existía, como si cada proyecto cobrara vida
+            a través de mis teclas.<br><br>
+
+            Encuentro inspiración en ambientes tranquilos, en los viajes en moto que despejan la mente,
+            y en la poesía que me conecta con lo esencial. Estos espacios me permiten pensar con claridad,
+            diseñar con intención y resolver problemas con elegancia.<br><br>
+
+            Disfruto trabajar en equipo, compartir ideas, aprender de otros y aportar soluciones que sumen.
+            Creo que la colaboración es el motor que transforma proyectos individuales en experiencias memorables.
+          </p>
+
+
+          <ul class="about__data  grid">
+            <li class="data__item">
+              <h3 class="data__title">Nombre:</h3>
+              <span class="data__description">Daniel Sandoval</span>
+            </li>
+
+            <li class="data__item">
+              <h3 class="data__title">Edad:</h3>
+              <span class="data__description">20 Años</span>
+            </li>
+
+            <li class="data__item">
+              <h3 class="data__title">País</h3>
+              <span class="data__description">Zulia-Venezuela</span>
+            </li>
+
+            <li class="data__item">
+              <h3 class="data__title">Correo</h3>
+              <span class="data__description about__link">daniel.ssoto05@gmail.com</span>
+            </li>
+          </ul>
+
+          <div class="about__bottom">
+            <a href="" class="btn">Descargar Cv</a>
+
+            <div class="about __social-links">
+              <a href="" class="about__social-link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="" class="about__social-link">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title title-center" data-title="Estudios">Certificaciones</h2>
+
+      <div class="resume__container container grid">
+        <div class="resume__group">
+          <h3 class="resume__heading">Estudios</h3>
+
+          <div class="resume__items">
+            <div class="resume__item">
+              <div class="resume__header">
+                <h3 class="resume__subtitle">Curso de Programacion</h3>
+                <span class="resume__icon">+</span>
+              </div>
+
+              <div class="resume__content">
+                <div class="resume__date-title">
+                  <h3 class="resume__title">Programacion Basica</h3>
+                  <span class="resume__date">2025 - 2025</span>
+                </div>
+
+                <p class="resume__description"> Conocimientos adquiridos en el curso Fundamentos de Programación
+                  Tipos de datos, variables y operadores
+                  Estructuras de control: condicionales y bucles
+                  Funciones, subrutinas y estructuras de datos (listas, pilas, colas, matrices)
+                  🔹 Manipulación de Archivos y Algoritmos
+                  Lectura/escritura de archivos
+                  Algoritmos de búsqueda y ordenación
+                  Manejo de errores y excepciones
+                  🔹 Bases de Datos y SQL
+                  Conceptos básicos de bases de datos
+                  Consultas SQL y cláusulas como GROUP BY
+                  Paneles de control para ABM (Alta, Baja, Modificación)
+                  🔹 Desarrollo Web
+                  HTML, CSS y JavaScript básico
+                  Introducción a PHP: sintaxis, estructuras, funciones y manejo de archivos
+                  Conceptos de hipervínculo, hipermedia e hiperdocumento
+                  🔹 Redes y Arquitectura
+                  Tipos de redes y protocolos de comunicación
+                  Arquitectura de redes y almacenamiento de datos
+                  🔹 Programación Orientada a Objetos (POO)
+                  Principios básicos y aplicación en entornos web </p>
+              </div>
+            </div>
+
+            <div class="resume__item">
+              <div class="resume__header">
+                <h3 class="resume__subtitle">Universidad del Zulia</h3>
+                <span class="resume__icon">-</span>
+              </div>
+
+              <div class="resume__content">
+                <div class="resume__date-title">
+                  <h3 class="resume__title">Licenciatura en Computación</h3>
+                  <span class="resume__date">2023 - Presente</span>
+                </div>
+
+                <p class="resume__description">Durante mi formación en LUZ aun Presente, adquirí conocimientos
+                  fundamentales en programación, estructuras de datos, bases de datos, redes y desarrollo de software.
+                  Esta carrera me ha permitido comprender desde la lógica matemática hasta la arquitectura de sistemas,
+                  preparándome para diseñar soluciones tecnológicas eficientes y adaptables. Mi enfoque combina un
+                  análisis riguroso con creatividad, orientado siempre a mejorar la experiencia del usuario y la
+                  funcionalidad de los sistemas.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="resume__group">
+          <h3 class="resume__heading">Experiencia</h3>
+
+          <div class="resume__items">
+            <div class="resume__item">
+              <div class="resume__header">
+                <h3 class="resume__subtitle">Experiencia fuera del área académica</h3>
+                <span class="resume__icon">+</span>
+              </div>
+
+              <div class="resume__content">
+                <div class="resume__date-title">
+                  <h3 class="resume__title">Scripter</h3>
+                  <span class="resume__date">2023 - 2024</span>
+                </div>
+
+                <p class="resume__description">En mis tiempos libres, me dedico a editar y configurar scripts en
+                  lenguaje Lua para servidores de MTA: San Andreas, colaborando activamente con comunidades de Brasil
+                  🇧🇷 y República Dominicana 🇩🇴. Esta experiencia me ha permitido aplicar mis conocimientos técnicos
+                  en entornos reales, mejorar habilidades de trabajo en equipo y explorar soluciones creativas para
+                  sistemas multijugador.</p>
+              </div>
+            </div>
+
+            <div class="resume__item">
+              <div class="resume__header">
+                <h3 class="resume__subtitle">Experiencia Academica</h3>
+                <span class="resume__icon">-</span>
+              </div>
+
+              <div class="resume__content">
+                <div class="resume__date-title">
+                  <h3 class="resume__title">Licenciatura en Computación</h3>
+                  <span class="resume__date">2023 - Presente</span>
+                </div>
+
+                <p class="resume__description">He fortalecido mi formación en informática a través de proyectos
+                  académicos y personales. Durante mi periodo universitario, he participado en iniciativas como la
+                  programación de un Arduino para una exposición conmemorativa por los años cumplidos de la universidad,
+                  así como el desarrollo de páginas web en proceso para distintos proyectos internos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 class="section__title title-center" data-title="Servicios">Que puedo hacer</h2>
+
+      <div class="services__container container grid">
+        <div class="services__item">
+          <i class="fa-solid fa-pen-to-square services__icon"></i>
+
+          <h3 class="services__title">Editor de Scripts para Videojuegos</h3>
+          <p class="services__description">Ofrezco soluciones creativas, creación de diálogos y narrativa para NPCs y
+            funcionales para enriquecer la experiencia del jugador. Conocimientos basico del lenguaje LUA,</p>
+
+          <span class="services__no">01</span>
+        </div>
+      </div>
+
+      <div class="services__container container grid">
+        <div class="services__item">
+          <i class="fa-solid fa-laptop services__icon"></i>
+
+          <h3 class="services__title">Desarrollo Web</h3>
+          <p class="services__description">Diseño y construyo sitios web con HTML, CSS y JavaScript. Me enfoco en la
+            estética, la usabilidad y la adaptabilidad para distintos dispositivos.</p>
+
+          <span class="services__no">02</span>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills"></section>
+    <h2 class="section__title title-center" data-title="Talentos">Habilidades</h2>
+
+    <div class="skills__container container grid">
+      <div class="skills__item">
+        <div class="skills__titles">
+          <h3 class="skills__name">🐍 Python</h3>
+          <span class="skills__no">45 %</span>
+        </div>
+
+        <p class="skills__description">Poseo conocimientos sólidos en programación estructurada con Python, incluyendo
+          el manejo de variables, estructuras de control, funciones, listas y arreglos. He trabajado con entornos de
+          desarrollo integrados (IDEs) y aplico buenas prácticas de depuración y organización del código. Actualmente
+          enfocado en fortalecer habilidades orientadas a objetos y automatización de tareas.</p>
+
+        <div class="skills__bar">
+          <div class="skills__percentage" style="width: 45%">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__item">
+        <div class="skills__titles">
+          <h3 class="skills__name">🧠 SQL</h3>
+          <span class="skills__no">30 %</span>
+        </div>
+
+        <p class="skills__description">Experiencia en diseño, consulta y administración de bases de datos relacionales
+          utilizando SQL. Domino sentencias básicas como SELECT, JOIN, GROUP BY, ORDER BY, y funciones
+          agregadas</p>
+
+        <div class="skills__bar">
+          <div class="skills__percentage" style="width: 30%">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__item">
+        <div class="skills__titles">
+          <h3 class="skills__name">🌐HTML & CSS</h3>
+          <span class="skills__no">50 %</span>
+        </div>
+
+        <p class="skills__description">Desarrollo interfaces web limpias y responsivas utilizando HTML y CSS. Enfocado
+          en la estructura semántica, estilos adaptativos y diferenciación visual.</p>
+
+        <div class="skills__bar">
+          <div class="skills__percentage" style="width: 50%">
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__item">
+        <div class="skills__titles">
+          <h3 class="skills__name">🎮 Lua</h3>
+          <span class="skills__no">35 %</span>
+        </div>
+
+        <p class="skills__description">Desarrollo sistemas personalizados, eventos interactivos y mecánicas de juego
+          optimizadas. Mi enfoque combina eficiencia del código con experiencia del usuario.</p>
+
+        <div class="skills__bar">
+          <div class="skills__percentage" style="width: 35%">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="works section" id="works">
+      <h2 class="section__title title-center" data-title="Mi Portafolio">Trabajos Recientes</h2>
+
+      <div class="work__container container grid">
+        <div class="work__card">
+          <img src="assets/img/project-img-2.jpg" alt="" class="work__img">
+
+          <div class="work__details">
+            <h3 class="work__title"> Sistema De Login</h3>
+            <span class="work__description">Un sistema de autenticación personalizado en Lua para servidores MTA.</span>
+          </div>
+        </div>
+
+        <div class="work__card">
+          <img src="assets/img/project-img-3.jpg" alt="" class="work__img">
+
+          <div class="work__details">
+            <h3 class="work__title">Calculadora Científica</h3>
+            <span class="work__description">Este proyecto consiste en una calculadora científica interactiva</span>
+          </div>
+        </div>
+
+        <div class="work__card">
+          <img src="assets/img/project-img-4.jpg" alt="" class="work__img">
+
+          <div class="work__details">
+            <h3 class="work__title">Web de Reserva de Restaurante – Proyecto en Desarrollo</h3>
+            <span class="work__description">Este proyecto consiste en una plataforma web para gestionar reservas de
+              mesas en restaurantes, desarrollada con tecnologías front-end como HTML, CSS y JavaScript. El objetivo es
+              ofrecer una solución intuitiva y eficiente tanto para clientes como para administradores.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title title-center" data-title="Contactenos">Contáctame</h2>
+
+      <div class="contact__container container grid">
+        <div class="contact__details">
+          <div class="contact__item">
+            <i class="fa-solid fa-phone contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Llámame</h3>
+              <span class="contact__date">+58 424-6122923</span>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <i class="fa-solid fa-envelope contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Correo</h3>
+              <span class="contact__date">daniel.ssoto05@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <i class="fa-solid fa-location-dot contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Ubicacion</h3>
+              <span class="contact__date">Urb. La Victoria, 2da Etapa, entre Av.78A y 78B,
+                Parroq. Caracciolo Parra Perez, Mcbo-Zulia.</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact__form">
+          <div class="form__group">
+            <div class="form__input">
+              <input type="text" placeholder="Nombre" class="input__control">
+            </div>
+
+            <div class="form__input">
+              <input type="email" placeholder="Correo" class="input__control">
+            </div>
+          </div>
+
+          <div class="form__input">
+            <input type="text" placeholder="Asunto" class="input__control">
+          </div>
+
+
+          <div class="form__input">
+            <textarea name="" id="" placeholder="Mensaje" cols="30" rows="10"
+              class="input__control textarea"></textarea>
+          </div>
+
+          <button class="btn contact__btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container ">
+      <p class="footer__copyright">&copy; 2025 Daniel. Todos Los Derechos Reservados</p>
+
+      <div class="footer __social-links">
+        <a href="" class="footer__social-link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="" class="footer__social-link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <audio autoplay loop>
+    <source src="assets/mp3/musica.mp3" type="audio/mpeg">
+  </audio>
+</body>
+
+</html>
